@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UserShelfsController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0">
+         <image>
+            <Image url="@assets/6.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="backUserShelfButton" layoutX="1182.0" layoutY="623.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="67.0" stylesheets="@Styles.css" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="55.0">
+               <image>
+                  <Image url="@assets/Arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
