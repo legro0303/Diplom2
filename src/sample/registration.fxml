@@ -51,5 +51,10 @@
             <Font name="Web Serveroff Regular" size="24.0" />
          </font>
       </Label>
+      <Button fx:id="backToAuthButtonReg" layoutX="217.0" layoutY="595.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="285.0" stylesheets="@Styles.css" text="Назад к авторизации" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

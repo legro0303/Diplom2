@@ -8,9 +8,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-public class UserShelfsController {
+public class LoadBookController {
 
     @FXML
     private ResourceBundle resources;
@@ -19,13 +20,15 @@ public class UserShelfsController {
     private URL location;
 
     @FXML
-    private Button backUserShelfButton;
+    private Button loadBookBackButton;
+
+    @FXML
+    private Button loadBookButton;
 
     @FXML
     void initialize() {
-
-        backUserShelfButton.setOnAction(actionEvent -> {
-            backUserShelfButton.getScene().getWindow().hide();
+        loadBookBackButton.setOnAction(actionEvent -> {
+            loadBookBackButton.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/sample/mainMenu.fxml"));
 
@@ -41,5 +44,11 @@ public class UserShelfsController {
             stage.show();
         });
 
+        loadBookButton.setOnAction(actionEvent -> {
+            FileChooser fileChooser = new FileChooser();
+            fileChooser.setTitle("Download book");
+            Stage stage = new Stage();
+            fileChooser.showOpenDialog(stage);
+        });
     }
 }
